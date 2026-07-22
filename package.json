@@ -1,0 +1,17 @@
+{
+  "name": "roller-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.13.1",
+  "scripts": {
+    "dev:miniapp": "pnpm --dir apps/miniapp dev --host 0.0.0.0 --port 5173",
+    "dev:admin": "pnpm --dir apps/admin-panel dev --host 0.0.0.0 --port 5174",
+    "dev:api": "pnpm --dir apps/api start:dev",
+    "build:miniapp": "pnpm --dir apps/miniapp build",
+    "build:admin": "pnpm --dir apps/admin-panel build",
+    "build:api": "pnpm --dir apps/api build",
+    "db:migrate": "pnpm --dir apps/api prisma:migrate",
+    "db:generate": "pnpm --dir apps/api prisma:generate",
+    "db:push": "pnpm --dir apps/api prisma:push"
+  }
+}
